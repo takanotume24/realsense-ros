@@ -12,7 +12,7 @@ aluminum peripherial evaluation case.
   <!--File includes-->
   <xacro:include filename="$(find realsense2_description)/urdf/_d435.gazebo.xacro"/>
 
-  <xacro:macro name="sensor_d435" params="name:=camera topics_ns:=camera parent *origin publish_pointcloud:=true">
+  <xacro:macro name="sensor_d435" params="name:=camera topics_ns:=camera parent publish_pointcloud:=true">
     <xacro:property name="M_PI" value="3.1415926535897931" />
   
     <!-- The following values are approximate, and the camera node
@@ -42,7 +42,7 @@ aluminum peripherial evaluation case.
 
     <!-- camera body, with origin at bottom screw mount -->
     <joint name="${name}_joint" type="fixed">
-      <xacro:insert_block name="origin" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <parent link="${parent}"/>
       <child link="${name}_bottom_screw_frame" />
     </joint>
