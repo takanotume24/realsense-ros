@@ -47,14 +47,14 @@ aluminum peripherial evaluation case.
       <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <mesh filename="package://realsense2_description/meshes/t265.stl" />
+            <mesh filename="package://realsense2_description_pal_robotics_forked/meshes/t265.stl" />
         </geometry>
         <material name="${name}_aluminum"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://realsense2_description/meshes/t265.stl" />
+          <mesh filename="package://realsense2_description_pal_robotics_forked/meshes/t265.stl" />
         </geometry>
       </collision>
       <inertial>
